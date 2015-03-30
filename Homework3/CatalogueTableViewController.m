@@ -9,6 +9,7 @@
 #import "CatalogueTableViewController.h"
 #import "CatalogueTableViewCell.h"
 #import "CatalogueItem.h"
+#import "CatalogueViewController.h"
 
 @interface CatalogueTableViewController ()
 
@@ -53,7 +54,14 @@
     
     return cell;
 }
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    CatalogueViewController *controller = segue.destinationViewController;
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+    CatalogueItem *item = self.cataloguteItems[indexPath.row];
+    controller.imageName = item.itemPhoto;
+    controller.textFill = item.itemText;
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -88,14 +96,7 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
 
 @end

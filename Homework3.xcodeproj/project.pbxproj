@@ -17,6 +17,7 @@
 		E10044A11AC99005005DEE98 /* CatalogueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10044A01AC99005005DEE98 /* CatalogueTableViewController.m */; };
 		E10044A41AC99042005DEE98 /* CatalogueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E10044A31AC99042005DEE98 /* CatalogueTableViewCell.m */; };
 		E10044A71AC9905B005DEE98 /* CatalogueItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E10044A61AC9905B005DEE98 /* CatalogueItem.m */; };
+		E10044AA1AC9A426005DEE98 /* CatalogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10044A91AC9A426005DEE98 /* CatalogueViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		E10044A31AC99042005DEE98 /* CatalogueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogueTableViewCell.m; sourceTree = "<group>"; };
 		E10044A51AC9905B005DEE98 /* CatalogueItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogueItem.h; sourceTree = "<group>"; };
 		E10044A61AC9905B005DEE98 /* CatalogueItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogueItem.m; sourceTree = "<group>"; };
+		E10044A81AC9A426005DEE98 /* CatalogueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogueViewController.h; sourceTree = "<group>"; };
+		E10044A91AC9A426005DEE98 /* CatalogueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogueViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				E10044A31AC99042005DEE98 /* CatalogueTableViewCell.m */,
 				E10044A51AC9905B005DEE98 /* CatalogueItem.h */,
 				E10044A61AC9905B005DEE98 /* CatalogueItem.m */,
+				E10044A81AC9A426005DEE98 /* CatalogueViewController.h */,
+				E10044A91AC9A426005DEE98 /* CatalogueViewController.m */,
 			);
 			path = Homework3;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10044AA1AC9A426005DEE98 /* CatalogueViewController.m in Sources */,
 				E10044821AC98278005DEE98 /* ViewController.m in Sources */,
 				E10044A11AC99005005DEE98 /* CatalogueTableViewController.m in Sources */,
 				E10044A71AC9905B005DEE98 /* CatalogueItem.m in Sources */,
@@ -432,6 +438,7 @@
 				E100449B1AC98278005DEE98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E100449C1AC98278005DEE98 /* Build configuration list for PBXNativeTarget "Homework3Tests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +447,7 @@
 				E100449E1AC98278005DEE98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
