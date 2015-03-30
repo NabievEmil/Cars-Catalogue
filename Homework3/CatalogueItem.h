@@ -10,9 +10,13 @@
 
 @interface CatalogueItem : NSObject
 
-@property(copy,nonatomic) NSString *itemPhoto;
+@property(copy,nonatomic) NSString *itemLogo;
 @property(copy,nonatomic) NSString *itemLabel;
+@property(copy,nonatomic) NSString *itemPhoto;
+@property(copy,nonatomic) NSString *itemText;
 
-+(CatalogueItem *)itemWithPhoto:(NSString *)itemPhoto label:(NSString *)itemLabel;
+
++(CatalogueItem *)itemWithLogo:(NSString *)itemLogo label:(NSString *)itemLabel photo:(NSString *)itemPhoto text:(NSString *) itemText;
+-(NSArray *) carsCatalogue;
 
 @end

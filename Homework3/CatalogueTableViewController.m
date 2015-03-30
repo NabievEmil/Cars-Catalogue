@@ -13,6 +13,7 @@
 @interface CatalogueTableViewController ()
 
 @property(strong,nonatomic) NSArray *cataloguteItems;
+@property(strong,nonatomic) CatalogueItem *car;
 
 @end
 
@@ -21,12 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.cataloguteItems = @[[CatalogueItem itemWithPhoto:@"BMWLogo" label:@"BMW"],
-                             [CatalogueItem itemWithPhoto:@"VolvoLogo" label:@"Volvo"],
-                             [CatalogueItem itemWithPhoto:@"SkodaLogo" label:@"Skoda"],
-                             [CatalogueItem itemWithPhoto:@"NissanLogo" label:@"Nissan"],
-                             [CatalogueItem itemWithPhoto:@"MazdaLogo" label:@"Mazda"],
-                             [CatalogueItem itemWithPhoto:@"OpelLogo" label:@"Opel"]];
+    self.car = [CatalogueItem new];
+    self.cataloguteItems = self.car.carsCatalogue;
     
 }
 
@@ -51,7 +48,7 @@
 {
     CatalogueTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath: indexPath];
     CatalogueItem *item = self.cataloguteItems[indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:item.itemPhoto];
+    cell.imageView.image = [UIImage imageNamed:item.itemLogo];
     cell.labelName.text = item.itemLabel;
     
     return cell;
