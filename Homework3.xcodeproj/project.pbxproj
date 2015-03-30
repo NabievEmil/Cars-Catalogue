@@ -14,6 +14,9 @@
 		E10044871AC98278005DEE98 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10044861AC98278005DEE98 /* Images.xcassets */; };
 		E100448A1AC98278005DEE98 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10044881AC98278005DEE98 /* LaunchScreen.xib */; };
 		E10044961AC98278005DEE98 /* Homework3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E10044951AC98278005DEE98 /* Homework3Tests.m */; };
+		E10044A11AC99005005DEE98 /* CatalogueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10044A01AC99005005DEE98 /* CatalogueTableViewController.m */; };
+		E10044A41AC99042005DEE98 /* CatalogueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E10044A31AC99042005DEE98 /* CatalogueTableViewCell.m */; };
+		E10044A71AC9905B005DEE98 /* CatalogueItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E10044A61AC9905B005DEE98 /* CatalogueItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		E100448F1AC98278005DEE98 /* Homework3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Homework3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10044941AC98278005DEE98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E10044951AC98278005DEE98 /* Homework3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Homework3Tests.m; sourceTree = "<group>"; };
+		E100449F1AC99005005DEE98 /* CatalogueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogueTableViewController.h; sourceTree = "<group>"; };
+		E10044A01AC99005005DEE98 /* CatalogueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogueTableViewController.m; sourceTree = "<group>"; };
+		E10044A21AC99042005DEE98 /* CatalogueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogueTableViewCell.h; sourceTree = "<group>"; };
+		E10044A31AC99042005DEE98 /* CatalogueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogueTableViewCell.m; sourceTree = "<group>"; };
+		E10044A51AC9905B005DEE98 /* CatalogueItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogueItem.h; sourceTree = "<group>"; };
+		E10044A61AC9905B005DEE98 /* CatalogueItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogueItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,12 @@
 				E10044861AC98278005DEE98 /* Images.xcassets */,
 				E10044881AC98278005DEE98 /* LaunchScreen.xib */,
 				E10044791AC98278005DEE98 /* Supporting Files */,
+				E100449F1AC99005005DEE98 /* CatalogueTableViewController.h */,
+				E10044A01AC99005005DEE98 /* CatalogueTableViewController.m */,
+				E10044A21AC99042005DEE98 /* CatalogueTableViewCell.h */,
+				E10044A31AC99042005DEE98 /* CatalogueTableViewCell.m */,
+				E10044A51AC9905B005DEE98 /* CatalogueItem.h */,
+				E10044A61AC9905B005DEE98 /* CatalogueItem.m */,
 			);
 			path = Homework3;
 			sourceTree = "<group>";
@@ -220,7 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E10044821AC98278005DEE98 /* ViewController.m in Sources */,
+				E10044A11AC99005005DEE98 /* CatalogueTableViewController.m in Sources */,
+				E10044A71AC9905B005DEE98 /* CatalogueItem.m in Sources */,
 				E100447F1AC98278005DEE98 /* AppDelegate.m in Sources */,
+				E10044A41AC99042005DEE98 /* CatalogueTableViewCell.m in Sources */,
 				E100447C1AC98278005DEE98 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
