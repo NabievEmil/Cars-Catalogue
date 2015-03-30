@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="U3U-Al-qZK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Cars-->
         <scene sceneID="xNx-cY-7oc">
             <objects>
-                <tableViewController id="dwC-j9-26t" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gS8-0s-7eS">
+                <tableViewController id="dwC-j9-26t" customClass="CatalogueTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="gS8-0s-7eS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Xys-1Y-Ffs">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="Xys-1Y-Ffs" customClass="CatalogueTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xys-1Y-Ffs" id="SLF-GQ-4dv">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BMWLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ppG-xt-dhV">
+                                            <rect key="frame" x="8" y="4" width="70" height="72"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMj-5d-Yun">
+                                            <rect key="frame" x="106" y="29" width="270" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageView" destination="ppG-xt-dhV" id="5KI-ZA-Ih9"/>
+                                    <outlet property="labelName" destination="TMj-5d-Yun" id="Z1D-Xe-6GT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -25,11 +40,11 @@
                             <outlet property="delegate" destination="dwC-j9-26t" id="ATu-7E-2bC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="lVO-Cb-GaR"/>
+                    <navigationItem key="navigationItem" title="Cars" id="lVO-Cb-GaR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AhV-mb-QqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="390"/>
+            <point key="canvasLocation" x="601" y="387"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="em8-Q5-b8p">
@@ -48,4 +63,7 @@
             <point key="canvasLocation" x="-219" y="390"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BMWLogo" width="458" height="422"/>
+    </resources>
 </document>
